@@ -1,1 +1,16 @@
-@import 'normalize.css'
+:root {
+    --primary: #f2edde;
+    --black: #000;
+    --text-color: #333;
+
+    // Default layout
+    --default-layout-header-height: 220px;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+}
