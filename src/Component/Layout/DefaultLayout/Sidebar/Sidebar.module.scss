@@ -1,0 +1,38 @@
+.side-bar{
+    width: 20%;
+    padding-top: 40px;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-family: SilkSerif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000;
+    font-style: italic;
+    letter-spacing: .2rem;
+    text-transform: lowercase;
+    margin-left: 30px;
+    line-height: 16px;
+    margin-bottom: 35px;
+}
+
+.menu ul li{
+    font-size: 14px!important;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-family: Karla;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.menu-end{
+    width: 35px;
+    height: 3px;
+    content: "";
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
