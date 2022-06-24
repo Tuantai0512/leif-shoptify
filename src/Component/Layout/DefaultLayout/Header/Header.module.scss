@@ -1,32 +1,51 @@
-.wrapper{
+.wrapper {
     height: 220px;
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
 }
 
-.topbar{
+.topbar {
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Karla", sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 13.5px;
     box-sizing: border-box;
-    background-color: #f2edde;
+    background-color: var(--primary);
 }
 
-.inner{
+.inner {
     height: calc(100% - 45px);
+    background-image: url(//cdn.shopify.com/s/files/1/0125/8122/t/49/assets/headerbg1.png?v=1072139…),
+        url(//cdn.shopify.com/s/files/1/0125/8122/t/49/assets/headerbg2.png?v=8069664…);
+    background-position: 0 0, right top;
+    background-size: 280px 65px, 433px 140px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
 }
 
-.mobileMenuButton{
+.mobile-menu-button {
     width: 30%;
     height: 100%;
 }
 
-.searchBar{
-    padding: 5px;
-    padding-left: 15px;
-    width: 100%;
-    border: none;
+.search-bar {
+    padding-top: 15px;
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
+.logo {
+    width: 20%;
+    height: 100%;
+}
+
+.shoping-cart {
+    margin-top: 15px;
+    width: 30%;
+    height: 100%;
+    text-align: end;
+}
