@@ -1,0 +1,39 @@
+.page{
+    padding-top: 50px;
+}
+
+.header-page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-title{
+    width: 50%;
+}
+
+.page-title h3{
+    margin: 0;
+}
+
+.page-option{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.soft-by{
+    border: none;
+    text-transform: uppercase;
+}
+
+.filter{
+    border: none;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+.count-page{
+    font-size: 15px;
+    text-transform: uppercase;
+}
