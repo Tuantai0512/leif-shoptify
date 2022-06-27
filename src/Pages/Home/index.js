@@ -2,6 +2,8 @@ import classNames from 'classnames/bind';
 import styles from './ArivalPage.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import ShopItem from './Shop-item';
+import data from '~/data';
 
 const cx = classNames.bind(styles);
 
@@ -23,11 +25,23 @@ function Home() {
                         <option value="7">newest to oldest</option>
                         <option value="8">best selling</option>
                     </select>
-                    <button className={cx('filter')}><FontAwesomeIcon icon={faFilter} style={{marginRight: '10px'}}/>Filter</button>
+                    <button className={cx('filter')}>
+                        <FontAwesomeIcon icon={faFilter} style={{ marginRight: '10px' }} />
+                        Filter
+                    </button>
                     <span className={cx('count-page')}>page 1/1</span>
                 </div>
             </div>
-            <div></div>
+            <div className={cx('shop-list')}>
+                {data.shopData.map((item, index) => {
+                    return <ShopItem 
+                    img={item.img} 
+                    title={item.title} 
+                    price={item.price} 
+                    key={index} 
+                    item={item} />;
+                })}
+            </div>
         </div>
     );
 }

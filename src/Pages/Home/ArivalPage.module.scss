@@ -37,3 +37,9 @@
     font-size: 15px;
     text-transform: uppercase;
 }
+
+.shop-list{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
