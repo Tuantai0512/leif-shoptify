@@ -11,14 +11,14 @@ function SideBar() {
         </div>
         <div className={cx('menu')}>
             <ul>
-                <li><a href='/description'>NEW ARRIVALS</a></li>
-                <li><a href='/description'>HOME DECOR</a></li>
-                <li><a href='/description'>ARTWORK</a></li>
-                <li><a href='/description'>KITCHEN & DINING</a></li>
-                <li><a href='/description'>BATH & APOTHECARY</a></li>
-                <li><a href='/description'>JEWELRY & ACCESSORIES</a></li>
-                <li><a href='/description'>PAPER GOODS</a></li>
-                <li><a href='/description'>SALE</a></li>
+                <li><a href='/'>NEW ARRIVALS</a></li>
+                <li><a href='/'>HOME DECOR</a></li>
+                <li><a href='/'>ARTWORK</a></li>
+                <li><a href='/'>KITCHEN & DINING</a></li>
+                <li><a href='/'>BATH & APOTHECARY</a></li>
+                <li><a href='/'>JEWELRY & ACCESSORIES</a></li>
+                <li><a href='/'>PAPER GOODS</a></li>
+                <li><a href='/'>SALE</a></li>
                 <li><span>______</span></li>
             </ul>
         </div>

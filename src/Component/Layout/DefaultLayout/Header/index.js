@@ -23,7 +23,7 @@ function Header() {
                     <img src={images.logo} alt="Leif-shopify" style={{ height: '100%'}}/>
                 </div>
                 <div className={cx('shoping-cart')}>
-                    <a href='/description'>shopping cart</a>
+                    <a href='/cartpage'>shopping cart</a>
                     <FontAwesomeIcon icon={faBasketShopping} />
                 </div>
             </div>
