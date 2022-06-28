@@ -3,71 +3,19 @@ import styles from './ArivalPage.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import ShopItem from './Shop-item';
-import { useState } from 'react';
-import images from '~/assets/images';
-import { useNavigate } from 'react-router-dom';
+import data from '~/data';
+import {Link } from 'react-router-dom';
+
+
 
 const cx = classNames.bind(styles);
 
 function Home() {
-    const nav = useNavigate();
-    const [data, setData] = useState({
-        shopData: [
-            {
-                img: images.img1,
-                title: 'Beyond happy for you',
-                price: '$25.00',
-            },
-            {
-                img: images.img2,
-                title: 'Makana candle',
-                price: '$24.00',
-            },
-            {
-                img: images.img3,
-                title: 'Pasteleria budvase lavender',
-                price: '$26.00',
-            },
-            {
-                img: images.img1,
-                title: 'Beyond happy for you',
-                price: '$25.00',
-            },
-            {
-                img: images.img2,
-                title: 'Makana candle',
-                price: '$24.00',
-            },
-            {
-                img: images.img3,
-                title: 'Pasteleria budvase lavender',
-                price: '$26.00',
-            },
-            {
-                img: images.img1,
-                title: 'Beyond happy for you',
-                price: '$25.00',
-            },
-            {
-                img: images.img2,
-                title: 'Makana candle',
-                price: '$24.00',
-            },
-            {
-                img: images.img3,
-                title: 'Pasteleria budvase lavender',
-                price: '$26.00',
-            },
-        ],
-        cartData: [],
-    });
+   /*  const nav = useNavigate(); */
 
-    const handleClick = (item) => {
+    /* const handleClick = (item) => {
         nav('/cartpage');
-        setData({ ...data, cartData: [...data.cartData, item] });
-    };
-
-    console.log({ data });
+    }; */
 
     return (
         <div className={cx('page')}>
@@ -96,14 +44,15 @@ function Home() {
             <div className={cx('shop-list')}>
                 {data.shopData.map((item, index) => {
                     return (
+                        <Link to="/cartpage" state={item}>
                         <ShopItem
                             img={item.img}
                             title={item.title}
                             price={item.price}
                             key={index}
                             item={item}
-                            handleClick={() => handleClick(item)}
                         />
+                        </Link>
                     );
                 })}
             </div>
