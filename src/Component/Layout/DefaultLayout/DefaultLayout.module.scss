@@ -6,3 +6,25 @@
 .content{
     width: 79%;
 }
+
+//PC
+
+@media (min-width: 1024px) {
+
+}
+
+//Tablet
+
+@media (min-width: 741px) and (max-width: 1023px) {
+    .content{
+        width: 100%;
+    }
+}
+
+//Mobile
+
+@media (max-width: 740px) {
+    .content{
+        width: 100%;
+    }
+}

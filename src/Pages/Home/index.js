@@ -4,14 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import ShopItem from './Shop-item';
 import data from '~/data';
-import {Link } from 'react-router-dom';
-
-
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
 function Home() {
-   /*  const nav = useNavigate(); */
+    /*  const nav = useNavigate(); */
 
     /* const handleClick = (item) => {
         nav('/cartpage');
@@ -45,13 +43,7 @@ function Home() {
                 {data.shopData.map((item, index) => {
                     return (
                         <Link to="/cartpage" state={item}>
-                        <ShopItem
-                            img={item.img}
-                            title={item.title}
-                            price={item.price}
-                            key={index}
-                            item={item}
-                        />
+                            <ShopItem img={item.img} title={item.title} price={item.price} key={index} item={item} />
                         </Link>
                     );
                 })}

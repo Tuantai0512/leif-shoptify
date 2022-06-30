@@ -1,5 +1,5 @@
 .wrapper {
-    height: 220px;
+    max-height: 220px;
     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
 }
 
@@ -30,12 +30,24 @@
     height: 100%;
 }
 
+.mobile-menu-button button{
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    padding: 10px;
+}
+
 .search-bar {
     padding-top: 15px;
     width: 40%;
     margin: 10px;
     display: flex;
     align-items: center;
+}
+
+.search-input{
+    background-color: transparent;
+    border: none;
 }
 
 .logo {
@@ -48,6 +60,9 @@
     width: 30%;
     height: 100%;
     text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .shoping-cart a{
@@ -58,4 +73,34 @@
     color: #000;
     text-transform: lowercase;
     letter-spacing: 0.09rem;
+}
+
+// PC
+
+@media (min-width: 1024px) {
+    .mobile-menu-button button{
+        display: none;
+    }
+}
+
+// Tablet
+
+@media (min-width: 741px) and (max-width: 1023px) {
+    .mobile-menu-button button{
+        display: none;
+    }
+}
+
+// mobile
+
+@media (max-width: 740px){
+    .topbar{
+        text-align: center;
+    }
+    .search-bar{
+        display: none;
+    }
+    .shoping-cart a{
+        display: none;
+    }
 }

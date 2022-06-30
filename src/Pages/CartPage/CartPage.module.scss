@@ -40,6 +40,7 @@
             width: 100%;
             display: flex;
             justify-content: flex-start;
+            flex-wrap: wrap;
             align-items: center;
         }
         &-item{
@@ -83,6 +84,32 @@
     &-payment:hover{
         color: #fff;
         background-color: #000;
+    }
+}
+
+//PC
+
+@media (min-width: 1024px) {
+
+}
+
+//Tablet
+
+@media (min-width: 741px) and (max-width: 1023px) {
+    
+}
+
+//Mobile
+
+@media (max-width: 740px) {
+    .cartpage-header{
+        display: none;
+    }
+    .cartpage-content-item{
+        width: 100%;
+        &-price{
+            width: 33.33%;
+        }
     }
 }
 
